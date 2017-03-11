@@ -1,0 +1,168 @@
+<html>
+  <body>
+    <script>
+    var Answer = "yes"
+
+      function Start() {
+        Answer = prompt("you and your freinds enter a dragons cave (run,gold,fight)")
+        if(Answer=="run"){
+          A()
+        } else if (Answer=="gold"){
+          B()
+        } else if (Answer=="fight"){
+          C()
+        }
+        else {
+          Start()
+        }
+      }
+      function A() {
+        Answer = prompt("you run away, the dragon chasing you(split up,stay together,fight)")
+        if(Answer=="split up"){
+          AA()
+        } else if (Answer=="stay together"){
+          AB()
+        } else if (Answer=="fight"){
+          AC()
+        } else {
+          A()
+        }
+      }
+      function AA() {
+        Answer = prompt("the dragon kills your friends and comes after you(run,hide,fight)")
+        if(Answer=="run"){
+          Answer=prompt("the dragon catches you, you are dead                      Play again?")
+        } else if (Answer=="hide"){
+          Answer=prompt("the dragon finds you, you are dead                      Play again?")
+        } else if (Answer=="fight"){
+          Answer=prompt("the dragon kills you, you are dead                      Play again?")
+        }else {
+          AA()
+        }
+      }
+      function AB() {
+        Answer = prompt("you and your freinds make it to the woods and your horses(woods,horses,fight)")
+        if(Answer=="woods"){
+          Answer=prompt("the dragon kills you one by one, you are dead                      Play again?")
+        } else if (Answer=="horses"){
+          Answer=prompt("you die while mounting the horses, you are dead                      Play again?")
+        } else if (Answer=="fight"){
+          Answer=prompt("the dragon kills you all, you are dead                      Play again?")
+        }else {
+          AB()
+        }
+      }
+      function AC() {
+        Answer = prompt("the dragon is winning the fight(run,sword,bow)")
+        if(Answer=="run"){
+          Answer=prompt("you make it out while the dragon kills your freinds, you are alive                      Play again?")
+        } else if (Answer=="sword"){
+          Answer=prompt("the sword does nothing, you are dead                      Play again?")
+        } else if (Answer=="bow"){
+          Answer=prompt("the bow does nothing, you are dead                      Play again?")
+        }else {
+          AC()
+        }
+      }
+      function B() {
+        Answer = prompt("you grab gold while the dragon is getting up(run,gold,fight)")
+        if(Answer=="run"){
+          BA()
+        } else if (Answer=="gold"){
+          BB()
+        } else if (Answer=="fight"){
+          BC()
+        } else {
+          B()
+        }
+      }
+      function BA() {
+        Answer = prompt("the dragon is catching you(run,drop,fight)")
+        if(Answer=="run"){
+          Answer=prompt("weighed down by the gold you are no mach for the dragon, you are dead                      Play again?")
+        } else if (Answer=="drop"){
+          Answer=prompt("you drop the gold but the dragon catches you and your freinds, you are dead                      Play again?")
+        } else if (Answer=="fight"){
+          Answer=prompt("its hopeless, you are dead                      Play again?")
+        } else {
+          BA()
+        }
+      }
+      function BB() {
+        Answer = prompt("as you grab more gold the dragon gets up(gold,hide,sword)")
+        if(Answer=="gold"){
+          Answer=prompt("the dragon eats you while you grab more gold, you are dead                      Play again?")
+        } else if (Answer=="hide"){
+          Answer=prompt("there is nowhere to hide, you are dead                      Play again?")
+        } else if (Answer=="sword"){
+          Answer=prompt("it bounces off, you are dead                      Play again?")
+        } else {
+          BB()
+        }
+      }
+      function BC() {
+        Answer = prompt("the dragon is hurt(run,kill,gold)")
+        if(Answer=="run"){
+          Answer=prompt("the dragon chaces and kills you, you are dead                      Play again?")
+        } else if (Answer=="kill"){
+          Answer=prompt("the drgon breaths fire when you come near, you are dead                      Play again?")
+        } else if (Answer=="gold"){
+          Answer=prompt("the dragon gets up and kills you, you are dead                      Play again?")
+        } else {
+          BC()
+        }
+      }
+      function C() {
+        Answer = prompt("how do you attack?(sword,bow,magic)")
+        if(Answer=="sword"){
+          CA()
+        } else if (Answer=="bow"){
+          CB()
+        } else if (Answer=="magic"){
+          CC()
+        } else {
+          C()
+        }
+      }
+      function CA() {
+        Answer = prompt("which sword?(cleaver,saber,long sword)")
+        if(Answer=="cleaver"){
+          Answer=prompt("as you draw near the drgon breaths fie, you are dead                      Play again?")
+        } else if (Answer=="saber"){
+          Answer=prompt("its not big enough to hurt the dragon, you are dead                      Play again?")
+        } else if (Answer=="long sword"){
+          Answer=prompt("its unweildy and the dragon eats you, you are dead                      Play again?")
+        } else {
+          CA()
+        }
+      }
+      function CB() {
+        Answer = prompt("which arrow?(normal,fire,black)")
+        if(Answer=="normal"){
+          Answer=prompt("it bounces off, you are dead                      Play again?")
+        } else if (Answer=="fire"){
+          Answer=prompt("the dragon is fire proof, you are dead                      Play again?")
+        } else if (Answer=="black"){
+          Answer=prompt("the arrow hits the unprotected belly of the dragon, killing it instantly. However, as you escape with tresure the god (abreviated GM for unknown reasons) curses you, rocks fall everybody dies                     Play again?")
+        } else {
+          CB()
+        }
+      }
+      function CC() {
+        Answer = prompt("what type?(fire,water,earth)")
+        if(Answer=="fire"){
+          Answer=prompt("it does nothing as the dragon is fire proof, you are dead                      Play again?")
+        } else if (Answer=="water"){
+          Answer=prompt("the dragon gets wet, you are dead                      Play again?")
+        } else if (Answer=="earth"){
+          Answer=prompt("the ground rumbles, then the dragon kills you, you are dead                      Play again?")
+        } else {
+          CC()
+        }
+      }
+        while(Answer=="yes"){
+            Start()
+        }
+    </script>
+  </body>
+</html>
